@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Javascript</title>
+    <link rel="icon" href="./access/img/javascript.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./access/css/style.css">
+</head>
+<body>
+
+    
+    <div class="cover shadow-lg h-75">
+        <div class="row ">
+            <div class="col-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="Exe1-tab" data-toggle="pill" href="#Exe1" role="tab"
+                    aria-controls="Exe1" aria-selected="true">Bài 1</a>
+                    <a class="nav-link" id="Exe2-tab" data-toggle="pill" href="#Exe2" role="tab"
+                    aria-controls="Exe2" aria-selected="false">Bài 2</a>
+                    <a class="nav-link" id="Exe3-tab" data-toggle="pill" href="#Exe3" role="tab"
+                    aria-controls="Exe3" aria-selected="false">Bài 3</a>
+                    <a class="nav-link" id="Exe4-tab" data-toggle="pill" href="#Exe4" role="tab"
+                    aria-controls="Exe4" aria-selected="false">Bài 4</a>
+                    <a class="nav-link" id="Exe5-tab" data-toggle="pill" href="#Exe5" role="tab"
+                    aria-controls="Exe5" aria-selected="false">Bài 5</a>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- BÀI 1 - TÍNH TIỀN LƯƠNG NHÂN VIÊN -->
+                    <div class="tab-pane fade show active" id="Exe1" role="tabpanel" aria-labelledby="Exe1-tab">
+                        <h2>BÀI 1 - TÍNH TIỀN LƯƠNG NHÂN VIÊN</h2>
+                        <p>Bạn nhập vào số ngày công sẽ tính ra số tiền lương.</p>
+                        <form class="">
+                            <div class="form-group">
+                                <label for="workDay">Số ngày công:</label>
+                                <input type="number" class="form-control" id="workDay">
+                            </div>
+                            <div class="form-group">
+                                <label for="workDay">Lương 1 ngày:</label>
+                                <input type="number" class="form-control" id="salary" value="100000">
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btnCalc1">Tính lương</button>
+                        </form>
+                        <div id="result1" class="alert alert-success mt-3" role="alert">
+                            Tổng lương nhận được là:
+                          </div>
+                    </div>
+
+                    <!-- BÀI 2 - TÍNH TRUNG BÌNH CỘNG 5 SỐ -->
+                    <div class="tab-pane fade" id="Exe2" role="tabpanel" aria-labelledby="Exe2-tab">
+                        <h2>BÀI 2 - TÍNH TRUNG BÌNH CỘNG 5 SỐ</h2>
+                        <p>Bạn nhập vào 5 số sẽ tính trung bình cộng</p>
+                        <form class="row">
+                            <div class="form-group col-4">
+                                <label for="num1">Nhập số thứ 1:</label>
+                                <input type="number" class="form-control" id="num1">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="num2">Nhập số thứ 2:</label>
+                                <input type="number" class="form-control" id="num2">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="num3">Nhập số thứ 3:</label>
+                                <input type="number" class="form-control" id="num3">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="num4">Nhập số thứ 4:</label>
+                                <input type="number" class="form-control" id="num4">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="num5">Nhập số thứ 5:</label>
+                                <input type="number" class="form-control" id="num5">
+                            </div>
+                            <div class="col-4"></div>
+                            <button type="button" class="btn btn-primary ml-3" id="btnCalc2">Tính trung bình</button>
+                        </form>
+                        <div id="result2" class="alert alert-success mt-3" role="alert">
+                            Trung bình cộng 5 số là:
+                          </div>
+                    </div>
+
+                    <!-- BÀI 3 - QUY ĐỔI TIỀN -->
+                    <div class="tab-pane fade" id="Exe3" role="tabpanel" aria-labelledby="Exe3-tab">
+                        <h2>BÀI 3 - QUY ĐỔI TIỀN</h2>
+                        <p>Bạn nhập vào USD sẽ quy đổi ra số VND tương ứng</p>
+                        <form class="">
+                            <div class="form-group">
+                                <label for="usd">USD:</label>
+                                <input type="number" class="form-control" id="usd">
+                            </div>
+                            <div class="form-group">
+                                <label for="exchangeRate">Tỉ giá hiện tại:</label>
+                                <input type="number" class="form-control" id="exchangeRate" value="23500">
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btnCalc3">Quy đổi</button>
+                        </form>
+                        <div id="result3" class="alert alert-success mt-3" role="alert">
+                            Số tiền tương ứng là:
+                          </div>
+                    </div>
+
+                    <!-- BÀI 4 - TÍNH CHU VI, DIỆN TÍCH <br>HÌNH CHỮ NHẬT -->
+                    <div class="tab-pane fade" id="Exe4" role="tabpanel" aria-labelledby="Exe4-tab">
+                        <h2>BÀI 4 - TÍNH CHU VI, DIỆN TÍCH <br>HÌNH CHỮ NHẬT</h2>
+                        <p>Bạn nhập vào chiều dài và chiều rộng sẽ tính ra diện tích và chu vi của hình chữ nhật <br>
+                        <i>(Chú ý 2 cạnh phải cùng đơn vị đo nhé!)</i></p>
+                        <form class="row">
+                            <div class="form-group col-4">
+                                <label for="lenght">Chiều dài:</label>
+                                <input type="number" class="form-control" id="lenght">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="width">Chiều rộng:</label>
+                                <input type="number" class="form-control" id="width">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="unit">Đơn vị đo:</label>
+                                <select class="form-control" id="unit">
+                                    <option>m</option>
+                                    <option>dm</option>
+                                    <option>cm</option>
+                                    <option>mm</option>
+                                  </select>
+                            </div>
+                            <button type="button" class="btn btn-primary  ml-3" id="btnCalc4">Tính</button>
+                        </form>
+                        <div id="perimeter" class="alert alert-success mt-3" role="alert">
+                        </div>
+                        <div id="area" class="alert alert-success mt-3" role="alert">
+                        </div>
+                    </div>
+
+                    <!-- BÀI 5 - TÍNH TỔNG 2 KÝ SỐ -->
+                    <div class="tab-pane fade" id="Exe5" role="tabpanel" aria-labelledby="Exe5-tab">
+                        <h2>BÀI 5 - TÍNH TỔNG 2 KÝ SỐ</h2>
+                        <p>Bạn nhập vào 1 số có 2 chữ số, tính tổng 2 ký số của số vừa nhập</p>
+                        <form class="">
+                            <div class="form-group">
+                                <label for="number">Nhập số có 2 chữ số:</label>
+                                <input type="number" class="form-control" id="number">
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btnCalc5">Tính tổng</button>
+                        </form>
+                        <div id="result5" class="alert alert-success mt-3" role="alert">
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <script src="./access/js/main.js"></script>
+    <!-- Bootstrap JavaScript bundle -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+        
+</body>
+</html>
